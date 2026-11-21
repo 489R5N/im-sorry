@@ -12,9 +12,9 @@ A cute, interactive, heartfelt apology website designed to win back your girlfri
 - **🎮 The Runaway "No" Button Game**: She literally cannot click "No" — it playfully teleports away while the "YES" button gets bigger and bigger!
 - **🎉 Grand Confetti Explosion & Celebration**: Fireworks and victory modal when she clicks "YES".
 - **🎟️ 4 Redeemable Peace Offering Coupons**:
-  - Emergency Boba/Coffee Date
+  - Coffee Date
   - Unlimited Cuddles & Massages
-  - Guaranteed Sub-60-Second Snap Replies
+  - Dinner at Lord's
   - "I Was Right All Along" Trump Card
 - **🎵 Built-in Cute Audio Synthesizer**: Delightful sound effects using the Web Audio API (100% standalone, no external audio files that could fail to load).
 - **💖 Customizable via URL**: Simply add `?her=Name&him=YourName` to customize the names on the fly without touching any code!
