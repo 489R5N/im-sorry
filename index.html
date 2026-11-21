@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#FFF5F7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>I'm So Sorry! 🥺 | Please Forgive Me</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,10 +17,10 @@
 </head>
 <body>
   <!-- Floating background particles -->
-  <div id="particle-container" class="particle-container"></div>
+  <div id="particle-container" class="particle-container" aria-hidden="true"></div>
 
   <!-- Audio control button -->
-  <button id="sound-toggle" class="sound-toggle" title="Toggle cute sound effects">
+  <button id="sound-toggle" class="sound-toggle" title="Toggle cute sound effects" aria-label="Toggle sound">
     <span class="sound-icon">🎵</span>
     <span class="sound-text">Sound: ON</span>
   </button>
@@ -99,11 +103,17 @@
     <!-- The Apology Letter (Interactive Envelope) -->
     <section class="card letter-card">
       <h2 class="section-title">💌 A Letter For You</h2>
-      <p class="section-subtitle">Click the envelope below to open what’s in my heart</p>
+      <p class="section-subtitle">Tap the envelope to open what’s in my heart</p>
 
       <div class="envelope-wrapper" id="envelope-wrapper">
         <div class="envelope" id="envelope">
-          <div class="envelope-back"></div>
+          <div class="envelope-front-indicator">
+            <span class="envelope-stamp-corner">📮</span>
+            <div class="envelope-to">
+              <small>Special Delivery For:</small>
+              <strong>The Prettiest Girl in the World ❤️</strong>
+            </div>
+          </div>
           <div class="letter" id="letter">
             <div class="letter-stamp">❤️</div>
             <h3 class="letter-salutation">My Dearest <span class="recipient-name">Love</span>,</h3>
@@ -130,9 +140,8 @@
               <strong class="sender-name">Your Boyfriend</strong>
             </p>
           </div>
-          <div class="envelope-front"></div>
           <div class="envelope-seal" id="envelope-seal">
-            <span>TAP ME</span>
+            <span>✨ TAP TO OPEN ✨</span>
           </div>
         </div>
       </div>
@@ -140,8 +149,13 @@
 
     <!-- Interactive Forgiveness Section (The Runaway "No" Button) -->
     <section class="card game-card">
-      <h2 class="section-title">🥺 The Million Dollar Question</h2>
+      <h2 class="section-title">🥺 The Big Question</h2>
       <p class="section-subtitle">Do you forgive me? Please say yes...</p>
+
+      <!-- Runaway dialogue tooltip -->
+      <div class="dodge-bubble" id="dodge-bubble">
+        <span id="dodge-text">Psst... good luck tapping "No" 😉</span>
+      </div>
 
       <div class="buttons-playground" id="playground">
         <button id="btn-yes" class="btn btn-yes">
@@ -156,7 +170,7 @@
       </div>
 
       <p class="runaway-hint" id="runaway-hint">
-        (Psst... good luck trying to tap "No" 😉)
+        (Tap "No" if you dare... if you can catch it! 🏃💨)
       </p>
     </section>
 
@@ -167,6 +181,8 @@
 
       <div class="coupons-grid">
         <div class="coupon-item" data-claimed="false">
+          <div class="ticket-notch notch-left"></div>
+          <div class="ticket-notch notch-right"></div>
           <div class="coupon-badge">VIP PASS</div>
           <div class="coupon-icon">🧋</div>
           <h3>Emergency Boba / Coffee Date</h3>
@@ -175,6 +191,8 @@
         </div>
 
         <div class="coupon-item" data-claimed="false">
+          <div class="ticket-notch notch-left"></div>
+          <div class="ticket-notch notch-right"></div>
           <div class="coupon-badge">LIFETIME</div>
           <div class="coupon-icon">💆‍♀️</div>
           <h3>Unlimited Cuddles & Massages</h3>
@@ -183,6 +201,8 @@
         </div>
 
         <div class="coupon-item" data-claimed="false">
+          <div class="ticket-notch notch-left"></div>
+          <div class="ticket-notch notch-right"></div>
           <div class="coupon-badge">SPECIAL</div>
           <div class="coupon-icon">⚡</div>
           <h3>Sub-60-Second Snap Replies</h3>
@@ -191,6 +211,8 @@
         </div>
 
         <div class="coupon-item" data-claimed="false">
+          <div class="ticket-notch notch-left"></div>
+          <div class="ticket-notch notch-right"></div>
           <div class="coupon-badge">TRUMP CARD</div>
           <div class="coupon-icon">👑</div>
           <h3>"I Was Right All Along" Card</h3>
@@ -229,7 +251,7 @@
   </main>
 
   <!-- Celebration Modal (When Yes is clicked) -->
-  <div class="modal-overlay" id="celebration-modal">
+  <div class="modal-overlay" id="celebration-modal" role="dialog" aria-modal="true">
     <div class="modal-card">
       <div class="modal-confetti-badge">🎉 YAAAAY! 🎉</div>
       <div class="modal-icon">🥰</div>
