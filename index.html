@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>I'm So Sorry! 🥺 | Please Forgive Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Canvas Confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <!-- Floating background particles -->
+  <div id="particle-container" class="particle-container"></div>
+
+  <!-- Audio control button -->
+  <button id="sound-toggle" class="sound-toggle" title="Toggle cute sound effects">
+    <span class="sound-icon">🎵</span>
+    <span class="sound-text">Sound: ON</span>
+  </button>
+
+  <main class="container">
+    <!-- Snapchat Notification Banner -->
+    <header class="snap-notification">
+      <div class="snap-icon-wrap">
+        <svg class="snap-ghost-icon" viewBox="0 0 100 100">
+          <path d="M50 15 C33 15 24 28 24 45 C24 54 28 60 27 65 C25 69 19 70 16 75 C14 78 17 82 22 81 C26 80 30 76 33 78 C37 80 39 85 45 85 C48 85 49 81 50 81 C51 81 52 85 55 85 C61 85 63 80 67 78 C70 76 74 80 78 81 C83 82 86 78 84 75 C81 70 75 69 73 65 C72 60 76 54 76 45 C76 28 67 15 50 15 Z" fill="#FFFC00" stroke="#000" stroke-width="4" stroke-linejoin="round"/>
+          <ellipse cx="42" cy="40" rx="3.5" ry="5.5" fill="#000"/>
+          <ellipse cx="58" cy="40" rx="3.5" ry="5.5" fill="#000"/>
+          <ellipse cx="43" cy="38" rx="1.2" ry="2" fill="#fff"/>
+          <ellipse cx="59" cy="38" rx="1.2" ry="2" fill="#fff"/>
+          <path d="M44 52 Q50 58 56 52" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="36" cy="48" r="4" fill="#FF85A1" opacity="0.6"/>
+          <circle cx="64" cy="48" r="4" fill="#FF85A1" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="snap-noti-text">
+        <div class="snap-noti-header">
+          <span class="snap-app-name">SNAPCHAT PRIORITY ALERT</span>
+          <span class="snap-time">Just now</span>
+        </div>
+        <p class="snap-noti-msg">
+          <strong>⚠️ Case #007:</strong> Leaving <span class="recipient-name">My Beautiful Girl</span> on delivered is a federal crime 🥺
+        </p>
+      </div>
+    </header>
+
+    <!-- Hero Card -->
+    <section class="card hero-card">
+      <div class="mascot-container">
+        <div class="ghost-mascot">
+          <svg viewBox="0 0 120 120" class="ghost-svg">
+            <path class="ghost-body" d="M60 18 C38 18 28 35 28 55 C28 66 33 73 31 79 C29 84 21 86 18 92 C15 96 19 101 25 100 C30 99 35 94 39 96 C44 98 47 104 54 104 C58 104 59 99 60 99 C61 99 62 104 66 104 C73 104 76 98 81 96 C85 94 90 99 95 100 C101 101 105 96 102 92 C99 86 91 84 89 79 C87 73 92 66 92 55 C92 35 82 18 60 18 Z" fill="#FFE066" stroke="#2D3142" stroke-width="4.5" stroke-linejoin="round"/>
+            <!-- Teardrops -->
+            <path class="tear tear-left" d="M43 57 C41 63 39 68 43 72 C47 72 47 65 43 57 Z" fill="#5BC0BE"/>
+            <path class="tear tear-right" d="M77 57 C75 63 73 68 77 72 C81 72 81 65 77 57 Z" fill="#5BC0BE"/>
+            <!-- Cute eyes -->
+            <ellipse cx="47" cy="48" rx="5" ry="7" fill="#2D3142"/>
+            <ellipse cx="73" cy="48" rx="5" ry="7" fill="#2D3142"/>
+            <ellipse cx="49" cy="45" rx="2" ry="3" fill="#ffffff"/>
+            <ellipse cx="75" cy="45" rx="2" ry="3" fill="#ffffff"/>
+            <!-- Blush -->
+            <ellipse cx="38" cy="58" rx="6" ry="3.5" fill="#FF6B8B" opacity="0.6"/>
+            <ellipse cx="82" cy="58" rx="6" ry="3.5" fill="#FF6B8B" opacity="0.6"/>
+            <!-- Pouting/sad mouth -->
+            <path d="M52 64 Q60 58 68 64" stroke="#2D3142" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <!-- Little flower in hands -->
+            <g class="flower-gift">
+              <line x1="60" y1="78" x2="60" y2="92" stroke="#4CAF50" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="54" cy="76" r="4.5" fill="#FF85A1"/>
+              <circle cx="66" cy="76" r="4.5" fill="#FF85A1"/>
+              <circle cx="60" cy="70" r="4.5" fill="#FF85A1"/>
+              <circle cx="60" cy="82" r="4.5" fill="#FF85A1"/>
+              <circle cx="60" cy="76" r="3.5" fill="#FFD166"/>
+            </g>
+          </svg>
+          <div class="heart-pulse">💔 ➜ 💖</div>
+        </div>
+      </div>
+
+      <h1 class="main-title">I Am So Incredibly Sorry!</h1>
+      <p class="subtitle">
+        To <span class="recipient-name highlight-name">My Favorite Person</span>, from <span class="sender-name highlight-name">The Biggest Fool</span>
+      </p>
+
+      <div class="crime-report">
+        <div class="crime-tag">🚨 THE ACCUSATION</div>
+        <p class="crime-desc">
+          "Did not reply to her Snap messages in a timely manner, leaving the cutest, most precious girl feeling ignored and annoyed."
+        </p>
+        <div class="crime-verdict">
+          <strong>VERDICT:</strong> 100% Guilty as charged. No defense. No excuses.
+        </div>
+      </div>
+    </section>
+
+    <!-- The Apology Letter (Interactive Envelope) -->
+    <section class="card letter-card">
+      <h2 class="section-title">💌 A Letter For You</h2>
+      <p class="section-subtitle">Click the envelope below to open what’s in my heart</p>
+
+      <div class="envelope-wrapper" id="envelope-wrapper">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter" id="letter">
+            <div class="letter-stamp">❤️</div>
+            <h3 class="letter-salutation">My Dearest <span class="recipient-name">Love</span>,</h3>
+            <p>
+              I know you're upset with me for missing your Snap messages, and you have every right to be. 
+              Leaving you hanging is something I truly regret.
+            </p>
+            <p>
+              Your snaps and messages are honestly the sweetest highlight of my entire day. When you share little 
+              moments of your life with me, it makes me smile like an idiot. Missing them or replying late 
+              is never because I don't care — I care about you more than words can say.
+            </p>
+            <p>
+              I promise from now on:
+            </p>
+            <ul class="promise-list">
+              <li>🔔 Snap notifications on high priority & chat pinned to #1</li>
+              <li>⚡ Immediate replies whenever my hands are free</li>
+              <li>💖 Never taking your sweet presence for granted</li>
+            </ul>
+            <p class="letter-closing">
+              I love you so much, my baby. Please forgive this silly boy? 🥺<br>
+              Forever yours,<br>
+              <strong class="sender-name">Your Boyfriend</strong>
+            </p>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-seal" id="envelope-seal">
+            <span>TAP ME</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Forgiveness Section (The Runaway "No" Button) -->
+    <section class="card game-card">
+      <h2 class="section-title">🥺 The Million Dollar Question</h2>
+      <p class="section-subtitle">Do you forgive me? Please say yes...</p>
+
+      <div class="buttons-playground" id="playground">
+        <button id="btn-yes" class="btn btn-yes">
+          <span class="btn-icon">🥰</span>
+          <span class="btn-label">YES, I forgive you!</span>
+        </button>
+
+        <button id="btn-no" class="btn btn-no">
+          <span class="btn-icon">😠</span>
+          <span class="btn-label" id="no-label">No, still mad!</span>
+        </button>
+      </div>
+
+      <p class="runaway-hint" id="runaway-hint">
+        (Psst... good luck trying to tap "No" 😉)
+      </p>
+    </section>
+
+    <!-- Interactive Peace Offerings / Coupons -->
+    <section class="card coupons-card">
+      <h2 class="section-title">🎟️ Peace Offerings & Vouchers</h2>
+      <p class="section-subtitle">Tap any coupon below to claim your apology rewards!</p>
+
+      <div class="coupons-grid">
+        <div class="coupon-item" data-claimed="false">
+          <div class="coupon-badge">VIP PASS</div>
+          <div class="coupon-icon">🧋</div>
+          <h3>Emergency Boba / Coffee Date</h3>
+          <p>Anytime, anywhere, whatever flavor you want. Paid in full by me.</p>
+          <button class="claim-btn">Tap to Redeem ✨</button>
+        </div>
+
+        <div class="coupon-item" data-claimed="false">
+          <div class="coupon-badge">LIFETIME</div>
+          <div class="coupon-icon">💆‍♀️</div>
+          <h3>Unlimited Cuddles & Massages</h3>
+          <p>Valid for instant head scratches, foot rubs, and tight comforting hugs.</p>
+          <button class="claim-btn">Tap to Redeem ✨</button>
+        </div>
+
+        <div class="coupon-item" data-claimed="false">
+          <div class="coupon-badge">SPECIAL</div>
+          <div class="coupon-icon">⚡</div>
+          <h3>Sub-60-Second Snap Replies</h3>
+          <p>Guaranteed 1-week speedrunner reply mode on Snapchat.</p>
+          <button class="claim-btn">Tap to Redeem ✨</button>
+        </div>
+
+        <div class="coupon-item" data-claimed="false">
+          <div class="coupon-badge">TRUMP CARD</div>
+          <div class="coupon-icon">👑</div>
+          <h3>"I Was Right All Along" Card</h3>
+          <p>Redeemable anytime to win any silly argument with zero debate.</p>
+          <button class="claim-btn">Tap to Redeem ✨</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why You Mean Everything To Me -->
+    <section class="card reasons-card">
+      <h2 class="section-title">✨ 3 Real Facts</h2>
+      <div class="reasons-list">
+        <div class="reason-pill">
+          <span class="pill-number">1</span>
+          <p>You have the most infectious smile and I hate knowing I dimmed it even for a minute.</p>
+        </div>
+        <div class="reason-pill">
+          <span class="pill-number">2</span>
+          <p>I would rather chat with you on Snap all day than do literally anything else.</p>
+        </div>
+        <div class="reason-pill">
+          <span class="pill-number">3</span>
+          <p>You are my favorite notification in the whole world. Period.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Made with all my heart & 1000% sincerity ❤️</p>
+      <p class="url-tip">
+        <small>Tip: You can personalize this link with <code>?her=HerName&him=YourName</code> in the URL!</small>
+      </p>
+    </footer>
+  </main>
+
+  <!-- Celebration Modal (When Yes is clicked) -->
+  <div class="modal-overlay" id="celebration-modal">
+    <div class="modal-card">
+      <div class="modal-confetti-badge">🎉 YAAAAY! 🎉</div>
+      <div class="modal-icon">🥰</div>
+      <h2 class="modal-title">SHE FORGAVE ME!</h2>
+      <p class="modal-msg">
+        Thank you for being the sweetest, most forgiving, and most wonderful person in the universe! 
+        I promise to do better and blow up your Snaps with love right now!
+      </p>
+      <div class="certificate-badge">
+        📜 OFFICIAL PLEDGE: <strong>Pinned to #1 Best Friends Forever 💛</strong>
+      </div>
+      <button class="btn btn-close-modal" id="btn-close-modal">I Love You! Send Me A Snap Now 💬</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
