@@ -8,13 +8,14 @@ A cute, interactive, heartfelt apology website designed to win back your girlfri
 
 - **🚨 Snapchat Style Priority Alert**: Playful and funny "Case #69" notification banner.
 - **👻 Cute Animated Snapchat Mascot**: Floating ghost holding a sweet flower with animated teardrops and beating heart.
-- **💌 Interactive Envelope & Letter**: Tap to open a genuine apology letter with a wax seal animation and promises.
+- **💌 Interactive Envelope & Letter**: Tap to open a
+ genuine apology letter with a wax seal animation and promises.
 - **🎮 The Runaway "No" Button Game**: She literally cannot click "No" — it playfully teleports away while the "YES" button gets bigger and bigger!
 - **🎉 Grand Confetti Explosion & Celebration**: Fireworks and victory modal when she clicks "YES".
 - **🎟️ 4 Redeemable Peace Offering Coupons**:
-  - TeaPost Date
-  - Unlimited Cuddles & Massages
-  - Dinner at Lord's
+  - Coffee/Dinner Date 
+  - Flowers as Pretty as YOU
+  - Photography Togather 
   - "I Was Right All Along" Trump Card
 - **🎵 Built-in Cute Audio Synthesizer**: Delightful sound effects using the Web Audio API (100% standalone, no external audio files that could fail to load).
 - **💖 Customizable via URL**: Simply add `?her=Name&him=YourName` to customize the names on the fly without touching any code!
